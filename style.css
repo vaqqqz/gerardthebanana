@@ -411,3 +411,13 @@ main { position: relative; z-index: 1; }
     transition-duration: 0.01ms !important;
   }
 }
+main,
+.hero,
+.links-section,
+.card,
+.card-inner {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    z-index: 999 !important;
+}
