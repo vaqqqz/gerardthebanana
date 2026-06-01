@@ -241,7 +241,7 @@ a {
   width: fit-content;
   align-items: center;
   padding: 0;
-  font-family: "Instrument Serif", Georgia, serif;
+  font-family: "Golos Text", system-ui, sans-serif;
   font-size: clamp(1.34rem, 1.85vw, 1.62rem);
   line-height: 1.02;
   font-weight: 400;
