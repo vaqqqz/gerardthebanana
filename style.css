@@ -36,40 +36,6 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  cursor: none;
-}
-
-/* =============================================
-   CUSTOM CURSOR
-   ============================================= */
-.cursor-dot {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.18);
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  backdrop-filter: blur(4px);
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: width 0.2s ease, height 0.2s ease, background 0.2s ease, opacity 0.3s ease;
-  will-change: transform;
-  opacity: 0;
-}
-
-.cursor-dot.visible { opacity: 1; }
-.cursor-dot.hovering {
-  width: 18px;
-  height: 18px;
-  background: rgba(255, 255, 255, 0.32);
-}
-
-/* Restore pointer for interactive elements */
-a, button { cursor: none; }
-
 /* =============================================
    BACKGROUND LAYER
    ============================================= */
@@ -155,7 +121,6 @@ main { position: relative; z-index: 1; }
   font-family: var(--font-logo);
   font-size: clamp(2rem, 8vw, 6.5rem);
   font-weight: 400;
-  font-style: italic;
   letter-spacing: -0.01em;
   line-height: 1.05;
   background: linear-gradient(135deg, var(--purple) 0%, #B52FA8 45%, var(--red) 100%);
