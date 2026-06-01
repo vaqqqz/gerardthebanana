@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GerardTheBanana — Stream Hub</title>
-  <meta name="description" content="Официальный лендинг стримера GerardTheBanana: ссылки на Twitch, Telegram, YouTube, Discord, DonationAlerts и другие площадки." />
+  <title>GerardTheBanana</title>
+  <meta name="description" content="Официальный лендинг стримера GerardTheBanana." />
   <meta name="theme-color" content="#131314" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,151 +12,156 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg-orb bg-orb-a"></div>
-  <div class="bg-orb bg-orb-b"></div>
-  <div class="noise" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-left" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-right" aria-hidden="true"></div>
 
   <main class="page">
     <section class="hero reveal">
-      <div class="hero-copy">
-        <div class="eyebrow">streamer hub · links · community</div>
-        <h1 class="hero-title" data-text="GerardTheBanana">GerardTheBanana</h1>
-        <p class="hero-text">
-          Официальная точка входа в мир Геры: стримы, рисунки, анонсы, мемы, донаты и все основные площадки в одном месте.
-        </p>
-
-        <div class="hero-stats">
-          <div class="stat-card glass">
-            <span class="stat-label">live access</span>
-            <strong>все ссылки под рукой</strong>
-          </div>
-          <div class="stat-card glass">
-            <span class="stat-label">style</span>
-            <strong>dark · glass · neon</strong>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-visual" id="orbitScene" aria-hidden="true">
-        <div class="orbit-layer orbit-back">
-          <div class="orbit-motion">
-            <div class="orbit-ring"></div>
-            <div class="orbit-planet"></div>
-          </div>
-        </div>
-
-        <div class="hero-core glass">
-          <div class="core-kicker">official portal</div>
-          <div class="core-name">GerardTheBanana</div>
-          <div class="core-sub">стример · художник · мемолог</div>
-        </div>
-
-        <div class="orbit-layer orbit-front">
-          <div class="orbit-motion">
-            <div class="orbit-ring"></div>
-            <div class="orbit-planet"></div>
-          </div>
-        </div>
-      </div>
+      <h1 class="brand-title" id="brandTitle" data-text="GerardTheBanana">GerardTheBanana</h1>
     </section>
 
-    <section class="links-section reveal">
-      <div class="section-head">
-        <h2>Ссылки</h2>
-        <p>Каждая карточка открывается в новой вкладке.</p>
-      </div>
+    <section class="links reveal" aria-label="Ссылки на площадки">
+      <a class="link-card glass" href="https://www.twitch.tv/gerardthebanana" target="_blank" rel="noopener noreferrer" style="--accent:#9146FF">
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M4 3h16v10l-4 4h-4.5L8 20H7v-3H4V3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M9 7v5M14 7v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="card-content">
+          <span class="platform">Twitch #1</span>
+          <span class="title">Основной канал Геры</span>
+          <span class="desc">Главные стримы и основная трансляция.</span>
+        </span>
+      </a>
 
-      <div class="links-grid">
-        <a class="link-card glass" href="https://www.twitch.tv/gerardthebanana" target="_blank" rel="noopener noreferrer" data-accent="#9146FF">
-          <span class="card-top">
-            <span class="platform">Twitch #1</span>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-          </span>
-          <span class="card-title">Основной канал Геры</span>
-          <span class="card-desc">https://www.twitch.tv/gerardthebanana</span>
-        </a>
+      <a class="link-card glass" href="https://www.twitch.tv/kpyrofriend" target="_blank" rel="noopener noreferrer" style="--accent:#9146FF">
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M4 3h16v10l-4 4h-4.5L8 20H7v-3H4V3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M9 7v5M14 7v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="card-content">
+          <span class="platform">Twitch #2</span>
+          <span class="title">Второй канал</span>
+          <span class="desc">Дополнительные эфиры и активности.</span>
+        </span>
+      </a>
 
-        <a class="link-card glass" href="https://www.twitch.tv/kpyrofriend" target="_blank" rel="noopener noreferrer" data-accent="#9146FF">
-          <span class="card-top">
-            <span class="platform">Twitch #2</span>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-          </span>
-          <span class="card-title">Второй канал</span>
-          <span class="card-desc">https://www.twitch.tv/kpyrofriend</span>
-        </a>
+      <a class="link-card glass" href="https://t.me/geralox" target="_blank" rel="noopener noreferrer" style="--accent:#229ED9">
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M21 4L3.5 11.1c-1.1.43-1.03 1.97.1 2.31l4.42 1.33 1.73 5.27c.3.9 1.48 1.1 2.04.34l2.48-3.28 4.96 3.63c.77.56 1.87.14 2.07-.81L23 5.76C23.25 4.69 22.26 3.56 21 4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M8.12 14.38 19.28 7.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="card-content">
+          <span class="platform">Telegram #1</span>
+          <span class="title">Рисунки и анонсы</span>
+          <span class="desc">Рисунки, анонсы стримов и всё основное — тут.</span>
+        </span>
+      </a>
 
-        <a class="link-card glass" href="https://t.me/geralox" target="_blank" rel="noopener noreferrer" data-accent="#229ED9">
-          <span class="card-top">
-            <span class="platform">Telegram #1</span>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-          </span>
-          <span class="card-title">Рисунки, анонсы стримов и всё основное — тут</span>
-          <span class="card-desc">https://t.me/geralox</span>
-        </a>
+      <a class="link-card glass" href="https://t.me/+-k2erP1pUvk5ZDk6" target="_blank" rel="noopener noreferrer" style="--accent:#229ED9">
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M21 4L3.5 11.1c-1.1.43-1.03 1.97.1 2.31l4.42 1.33 1.73 5.27c.3.9 1.48 1.1 2.04.34l2.48-3.28 4.96 3.63c.77.56 1.87.14 2.07-.81L23 5.76C23.25 4.69 22.26 3.56 21 4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M8.12 14.38 19.28 7.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="card-content">
+          <span class="platform">Telegram #2</span>
+          <span class="title">Щитпост и бяки</span>
+          <span class="desc">Щитпост, бяки и всё такое.</span>
+        </span>
+      </a>
 
-        <a class="link-card glass" href="https://t.me/+-k2erP1pUvk5ZDk6" target="_blank" rel="noopener noreferrer" data-accent="#229ED9">
-          <span class="card-top">
-            <span class="platform">Telegram #2</span>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-          </span>
-          <span class="card-title">Щитпост, бяки и всё такое</span>
-          <span class="card-desc">https://t.me/+-k2erP1pUvk5ZDk6</span>
-        </a>
+      <a class="link-card glass" href="https://www.youtube.com/@GerardTheBanana/videos" target="_blank" rel="noopener noreferrer" style="--accent:#FF0000">
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M21.5 7.5c.2.8.5 2.4.5 4.5s-.3 3.7-.5 4.5c-.2.8-.8 1.4-1.6 1.6-1.4.4-7.9.4-7.9.4s-6.5 0-7.9-.4c-.8-.2-1.4-.8-1.6-1.6C2.3 15.7 2 14.1 2 12s.3-3.7.5-4.5c.2-.8.8-1.4 1.6-1.6C5.5 5.5 12 5.5 12 5.5s6.5 0 7.9.4c.8.2 1.4.8 1.6 1.6Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="m10 9.5 5.5 2.5-5.5 2.5v-5Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="card-content">
+          <span class="platform">YouTube</span>
+          <span class="title">Аниматики и видео</span>
+          <span class="desc">Всякие различные аниматики.</span>
+        </span>
+      </a>
 
-        <a class="link-card glass" href="https://www.youtube.com/@GerardTheBanana/videos" target="_blank" rel="noopener noreferrer" data-accent="#FF0000">
-          <span class="card-top">
-            <span class="platform">YouTube</span>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-          </span>
-          <span class="card-title">Всякие различные аниматики</span>
-          <span class="card-desc">https://www.youtube.com/@GerardTheBanana/videos</span>
-        </a>
+      <a class="link-card glass" href="https://www.donationalerts.com/r/gerardthebanana" target="_blank" rel="noopener noreferrer" style="--accent:#F57C00">
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 2.8c-2.5 0-4.5 2-4.5 4.5 0 3.2 4.5 4.7 4.5 8.3 0-3.6 4.5-5.1 4.5-8.3 0-2.5-2-4.5-4.5-4.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M7.8 15.7c1.1 1.2 2.5 1.8 4.2 1.8s3.1-.6 4.2-1.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M9.2 9.3c.5-.7 1.4-1.2 2.1-1.2.9 0 1.3.4 1.8.9.4.4.8.9 1.7.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="card-content">
+          <span class="platform">DonationAlerts</span>
+          <span class="title">Скинуть копеечку</span>
+          <span class="desc">Поддержка стрима и полезные уведомления.</span>
+        </span>
+      </a>
 
-        <a class="link-card glass" href="https://www.donationalerts.com/r/gerardthebanana" target="_blank" rel="noopener noreferrer" data-accent="#F57C00">
-          <span class="card-top">
-            <span class="platform">DonationAlerts</span>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-          </span>
-          <span class="card-title">Скинуть копеечку</span>
-          <span class="card-desc">https://www.donationalerts.com/r/gerardthebanana</span>
-        </a>
+      <a class="link-card glass" href="https://vk.ru/boopboopbanan" target="_blank" rel="noopener noreferrer" style="--accent:#0077FF">
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 7.5c.6 7.1 3.8 11 8.8 11.7V7.5H11.3v4.2c-1.4-.2-2.8-2.2-3.7-4.2H5Zm10.2 0c-.4 1.8-1.1 3.2-2.2 4.2 1.5 1 3.2 3 4 7.5h3.1c-.9-4.2-2.6-6.8-4.5-7.6 1.5-.9 2.9-2.4 3.6-4.1h-4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="card-content">
+          <span class="platform">VK</span>
+          <span class="title">На всякий случай</span>
+          <span class="desc">Если всё будет плохо, тут тоже найдёшься.</span>
+        </span>
+      </a>
 
-        <a class="link-card glass" href="https://vk.ru/boopboopbanan" target="_blank" rel="noopener noreferrer" data-accent="#0077FF">
-          <span class="card-top">
-            <span class="platform">VK</span>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-          </span>
-          <span class="card-title">На всякий случай, если всё будет плохо</span>
-          <span class="card-desc">https://vk.ru/boopboopbanan</span>
-        </a>
+      <a class="link-card glass" href="https://discord.gg/UVrbgVMemf" target="_blank" rel="noopener noreferrer" style="--accent:#5865F2">
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M7 6.6c1.3-.6 2.8-1 5-1s3.7.4 5 1c1.1 1.8 1.7 3.8 1.9 6-1 1.4-2.3 2.4-3.8 3.1l-.8-1.2c.6-.2 1.1-.5 1.6-.8-.4-.2-.9-.4-1.3-.5-.3.3-.7.5-1.2.7-.8.3-1.4.4-2.4.4s-1.6-.1-2.4-.4c-.5-.2-.9-.4-1.2-.7-.4.1-.9.3-1.3.5.5.3 1 .6 1.6.8l-.8 1.2C6 15 4.7 14 3.7 12.6c.2-2.2.8-4.2 1.9-6Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M9.3 11.1h.01M14.7 11.1h.01" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M8.1 15.9c1.3.8 2.5 1.2 3.9 1.2s2.6-.4 3.9-1.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="card-content">
+          <span class="platform">Discord</span>
+          <span class="title">Дискорд-канал стримера</span>
+          <span class="desc">Чат, тусовка и голосовые каналы.</span>
+        </span>
+      </a>
 
-        <a class="link-card glass" href="https://discord.gg/UVrbgVMemf" target="_blank" rel="noopener noreferrer" data-accent="#5865F2">
-          <span class="card-top">
-            <span class="platform">Discord</span>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-          </span>
-          <span class="card-title">Дискорд-канал стримера</span>
-          <span class="card-desc">https://discord.gg/UVrbgVMemf</span>
-        </a>
+      <a class="link-card glass" href="https://memealerts.com/GerardTheBanana" target="_blank" rel="noopener noreferrer" style="--accent:#F0A500">
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M4.5 7.5h15v9h-4l-3 2.2-3-2.2h-5v-9Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M8 10.2h8M8 12.8h5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="card-content">
+          <span class="platform">Memealerts</span>
+          <span class="title">Мемы на экран</span>
+          <span class="desc">Здесь можно кидать мемы прямо на стрим.</span>
+        </span>
+      </a>
 
-        <a class="link-card glass" href="https://memealerts.com/GerardTheBanana" target="_blank" rel="noopener noreferrer" data-accent="#FF4D6D">
-          <span class="card-top">
-            <span class="platform">Memealerts</span>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-          </span>
-          <span class="card-title">Здесь можно кидать мемы на экран стримера</span>
-          <span class="card-desc">https://memealerts.com/GerardTheBanana</span>
-        </a>
-
-        <a class="link-card glass" href="https://boosty.to/gerardthebanana" target="_blank" rel="noopener noreferrer" data-accent="#F15F2C">
-          <span class="card-top">
-            <span class="platform">Boosty</span>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-          </span>
-          <span class="card-title">Бусти стримера</span>
-          <span class="card-desc">https://boosty.to/gerardthebanana</span>
-        </a>
-      </div>
+      <a class="link-card glass" href="https://boosty.to/gerardthebanana" target="_blank" rel="noopener noreferrer" style="--accent:#F15B2A">
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M7 4.5h5.2c2.7 0 4.3 1.4 4.3 3.7 0 1.5-.7 2.6-2 3.2 1.7.4 2.8 1.7 2.8 3.7 0 2.8-2 4.4-5.3 4.4H7V4.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M10.1 8.4h2.1c1.1 0 1.8-.5 1.8-1.4 0-.9-.7-1.4-1.8-1.4h-2.1v2.8Zm0 6.4h2.6c1.2 0 2-.5 2-1.5s-.8-1.5-2-1.5h-2.6v3Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="card-content">
+          <span class="platform">Boosty</span>
+          <span class="title">Бусти стримера</span>
+          <span class="desc">Поддержка и дополнительные материалы.</span>
+        </span>
+      </a>
     </section>
   </main>
 
