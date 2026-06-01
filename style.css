@@ -135,7 +135,7 @@ a {
 
 .link-card {
   position: relative;
-  min-height: 154px;
+  min-height: 124px;
   padding: 18px;
   border-radius: var(--radius);
   overflow: hidden;
