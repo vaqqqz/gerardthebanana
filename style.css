@@ -31,7 +31,7 @@ body {
     var(--bg);
   color: var(--text);
   font-family: "Golos Text", system-ui, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   overflow-x: hidden;
 }
 
@@ -255,7 +255,7 @@ a {
 .title {
   font-size: 1.02rem;
   line-height: 1.48;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: -0.01em;
   color: rgba(255, 255, 255, 0.92);
 }
