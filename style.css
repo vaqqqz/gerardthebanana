@@ -114,7 +114,6 @@ main { position: relative; z-index: 1; }
 .orbit-scene {
   position: relative;
   display: inline-block;
-  cursor: none;
 }
 
 .logo {
