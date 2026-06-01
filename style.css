@@ -31,6 +31,7 @@ body {
     var(--bg);
   color: var(--text);
   font-family: "Golos Text", system-ui, sans-serif;
+  font-weight: 400;
   overflow-x: hidden;
 }
 
@@ -244,7 +245,7 @@ a {
   font-family: "Golos Text", system-ui, sans-serif;
   font-size: clamp(1.34rem, 1.85vw, 1.62rem);
   line-height: 1.02;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.01em;
   text-transform: none;
   color: var(--accent);
