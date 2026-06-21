@@ -65,3 +65,17 @@
     });
   }
 })();
+  const secretButton = document.getElementById('secretButton');
+  const nikitaJokes = document.getElementById('nikitaJokes');
+
+  if (secretButton && nikitaJokes) {
+    let clickCount = 0;
+
+    secretButton.addEventListener('click', () => {
+      clickCount++;
+
+      if (clickCount >= 7) {
+        nikitaJokes.classList.add('visible');
+      }
+    });
+  }
