@@ -370,3 +370,34 @@ a {
     transform: none;
   }
 }
+
+.secret-area {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.secret-button {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.2);
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.secret-button:hover {
+  color: rgba(255,255,255,0.4);
+}
+
+.secret-jokes {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.04);
+}
+
+.secret-jokes.visible {
+  display: block;
+}
