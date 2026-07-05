@@ -496,3 +496,125 @@ a {
 }
 
 }
+.donate-buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-top:22px;
+}
+
+.about-button{
+    padding:14px 24px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+
+    color:white;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.25s;
+}
+
+.about-button:hover{
+    background:rgba(255,255,255,.12);
+}
+
+.donate-image img{
+    cursor:zoom-in;
+    transition:.35s;
+}
+
+.donate-image img:hover{
+    transform:scale(1.03);
+}
+
+.modal{
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,.72);
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:9999;
+}
+
+.modal.open{
+    opacity:1;
+    visibility:visible;
+}
+
+.modal-content{
+    position:relative;
+
+    width:min(600px,90vw);
+
+    padding:30px;
+
+    border-radius:18px;
+}
+
+.modal-content h2{
+    margin-top:0;
+}
+
+.modal-close{
+    position:absolute;
+
+    right:16px;
+    top:14px;
+
+    font-size:32px;
+
+    border:none;
+
+    background:none;
+
+    color:white;
+
+    cursor:pointer;
+}
+
+.image-modal img{
+    max-width:90vw;
+    max-height:90vh;
+
+    border-radius:18px;
+
+    box-shadow:0 20px 70px rgba(0,0,0,.6);
+
+    animation:zoom .3s ease;
+}
+
+.image-close{
+    position:fixed;
+
+    top:25px;
+    right:35px;
+
+    font-size:50px;
+}
+
+@keyframes zoom{
+
+from{
+    transform:scale(.7);
+    opacity:0;
+}
+
+to{
+    transform:scale(1);
+    opacity:1;
+}
+
+}
