@@ -79,3 +79,19 @@
       }
     });
   }
+const donateCard = document.querySelector(".donate-card");
+
+if (donateCard) {
+    const current = Number(donateCard.dataset.current);
+    const goal = Number(donateCard.dataset.goal);
+
+    const percent = Math.min(current / goal * 100, 100);
+
+    const fill = donateCard.querySelector(".progress-fill");
+    const text = donateCard.querySelector(".progress-text");
+
+    fill.style.width = percent + "%";
+
+    text.textContent =
+        `${current.toLocaleString("ru-RU")} / ${goal.toLocaleString("ru-RU")} ₽`;
+}
