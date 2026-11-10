@@ -40,7 +40,7 @@ const CONFIG = {
     { name: "Discord", url: "https://discord.gg/UVrbgVMemf", icon: "discord.png" },
     { name: "Memealerts", url: "https://memealerts.com/GerardTheBanana", icon: "memealerts.png" },
     { name: "Boosty", url: "https://boosty.to/gerardthebanana", icon: "boosty.png" },
-    { name: "TikTok (иконку не подвезли)", url: "https://tiktok.com/gerardthebanana", icon: "tiktok.png" },
+    { name: "TikTok (иконку не подвезли)", url: "https://tiktok.com/gerathebanana", icon: "tiktok.png" },
   ],
 
   commissions: {
