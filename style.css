@@ -172,5 +172,3 @@ fieldset.grp legend{padding:0 4px;font-weight:bold;color:var(--blue)}
   .grid{grid-template-columns:repeat(auto-fill,minmax(90px,1fr))}
   .info dt{width:90px}
 }
-#extra .pics { display: flex; gap: 8px; }
-#extra .pics img { display: block; flex: 1 1 0; min-width: 0; max-width: 100%; height: auto; }
